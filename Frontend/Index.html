@@ -19,8 +19,11 @@
         <h2>Crop Suggestions Form</h2>
         <form id="cropForm">
 
-            <input type="text" placeholder="state" required>
-            <input type="text" placeholder="District" required>
+            <input type="text" id="state" placeholder="state" required>
+            <input type="text" id="district" placeholder="District" required>
+            <input type="text" id="village" placeholder="Village" required>
+            <input type="number" id="area" placeholder="Area (in acres)" required>
+
 
 
             <select required>
@@ -50,8 +53,17 @@
                 Get Crop Suggestions
             </button>
 
+            <button type="reset">
+                Reset
+            </button>
+
         </form>
     </div>
+
+    <footer>Built by Manjeet 🚀</footer>
+
+    <script src="script.js"></script>
+
 
 </body>
 
