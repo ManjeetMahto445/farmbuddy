@@ -1,28 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FarmBuddy</title>
-        <link rel="stylesheet" heref="style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 <body>
-    <h1> 🌿 FarmBuddy</h1>
-    <p>Welcome to FarmBuddy, your ultimate companion for all things farming! Whether you're a seasoned farmer or just starting out, FarmBuddy is here to help you cultivate your land, manage your crops, and maximize your harvest. With our user-friendly interface and powerful tools, you can easily track your planting schedules, monitor soil health, and receive personalized tips to ensure a bountiful yield. Join the FarmBuddy community today and take your farming journey to the next level!</p>
+    <div class="container">
+        <div class="hero">
+            <h1> 🌿 FarmBuddy</h1>
+            <p>Welcome to FarmBuddy, your ultimate companion for all things farming! Whether you're a seasoned farmer or just starting out, FarmBuddy is here to help you cultivate your land, manage your crops, and maximize your harvest. With our user-friendly interface and powerful tools, you can easily track your planting schedules, monitor soil health, and receive personalized tips to ensure a bountiful yield. Join the FarmBuddy community today and take your farming journey to the next level!</p>
+        </div>
+    
+
+    <div class="card">
+
+        <h2>Crop Suggestions Form</h2>
+        <form id="cropForm">
+
+            <input type="text" placeholder="state" required>
+            <input type="text" placeholder="District" required>
 
 
-    <form>
-        <input type="text" placeholder="state"><br><br>
-        <input type="text" placeholder="District"><br><br>
+            <select required>
+                <option value="">Select Soil Type</option>
+                <option>Black Soil</option>
+                <option>Red Soil</option>
+                <option>Alluvial Soil</option>
+                <option>Laterite Soil</option>
+            </select>
 
-        <select>
-            <option>Soil Type</option>
-            <option>Black Soil</option>
-            <option>Red Soil</option>
-            <option>Alluvial Soil</option>
-        </select><br><br>
+            <select required>
+                <option value="">Select Season</option>
+                <option>Kharif</option>
+                <option>Rabi</option>
+                <option>zaid</option>
+            </select>
 
-        <button type="submit">
-            Get Crop Suggestions
-        </button>
-    </form>
+            <select required>
+                <option value="">Water Availability</option>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+            </select>
+
+
+            <button type="submit">
+                Get Crop Suggestions
+            </button>
+
+        </form>
+    </div>
+
 </body>
+
 </html>
