@@ -5,18 +5,35 @@ document
 
     e.preventDefault();
 
+    console.log("Submit button clicked!");
+
     const state = document.getElementById("state").value;
     const district = document.getElementById("district").value;
     const village = document.getElementById("village").value;
     const area = document.getElementById("area").value;
+    const soil = document.getElementById("soil").value;
+    const water = document.getElementById("water").value;
 
-    document.getElementById("result").innerHTML = `
-        <h3>Farmer Details:</h3>
-        <p>State: ${state}</p>
-        <p>District: ${district}</p>
-        <p>Village: ${village}</p>
-        <p>Area: ${area} acres</p>
+
+    let recommendation = "";
+    if (soil === "Red Soil" && water === "Medium") {
+        recommendation = "Wheat, Rice, Maize";
+    }
+    else if (soil === "Black Soil" && water === "High") {
+        recommendation = "Sugarcane, Cotton, Soybean";
+    }
+    else {
+        recommendation = "Please provide more specific soil and water conditions for better recommendations.";
+    }
+
+    document.getElementById("resultcard").innerHTML = `
+       <h3> 🌱 Recommended Crops </h3>
+       <p>${recommendation}</p>
     `;
+
+    
+    
+    document.getElementById("resultcard").style.display = "block";
 
 
     console.log("State:", state);

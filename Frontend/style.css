@@ -78,3 +78,7 @@ footer{
     color:#666;
     font-size:14px;
 }
+
+#resultcard{
+    display:none;
+}
